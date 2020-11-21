@@ -27,6 +27,14 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/miueon/leetcode/editor/en/DisplayTableOfFoodOrdersInARestaurant.kt">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/miueon/leetcode/editor/en/DisplayTableOfFoodOrdersInARestaurant.kt" />
+              <option name="questionId" value="1533" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/com/miueon/leetcode/editor/en/DivisorGame.java">
           <value>
             <LeetcodeEditor>
@@ -47,6 +55,14 @@
           <value>
             <LeetcodeEditor>
               <option name="path" value="$PROJECT_DIR$/src/main/java/com/miueon/leetcode/editor/en/FindElementsInAContaminatedBinaryTree.java" />
+              <option name="questionId" value="1387" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/miueon/leetcode/editor/en/FindElementsInAContaminatedBinaryTree.kt">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/miueon/leetcode/editor/en/FindElementsInAContaminatedBinaryTree.kt" />
               <option name="questionId" value="1387" />
             </LeetcodeEditor>
           </value>
