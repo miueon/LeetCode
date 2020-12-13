@@ -11,6 +11,14 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/miueon/leetcode/editor/en/ChampagneTower.kt">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/miueon/leetcode/editor/en/ChampagneTower.kt" />
+              <option name="questionId" value="815" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/com/miueon/leetcode/editor/en/CountingBits.kt">
           <value>
             <LeetcodeEditor>
@@ -75,6 +83,14 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/miueon/leetcode/editor/en/InvertBinaryTree.kt">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/miueon/leetcode/editor/en/InvertBinaryTree.kt" />
+              <option name="questionId" value="226" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/com/miueon/leetcode/editor/en/JewelsAndStones.java">
           <value>
             <LeetcodeEditor>
@@ -107,6 +123,14 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/miueon/leetcode/editor/en/MinimumNumbersOfFunctionCallsToMakeTargetArray.kt">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/miueon/leetcode/editor/en/MinimumNumbersOfFunctionCallsToMakeTargetArray.kt" />
+              <option name="questionId" value="1662" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/com/miueon/leetcode/editor/en/NAryTreeLevelOrderTraversal.kt">
           <value>
             <LeetcodeEditor>
@@ -120,6 +144,46 @@
             <LeetcodeEditor>
               <option name="path" value="$PROJECT_DIR$/src/main/java/com/miueon/leetcode/editor/en/NQueensIi.java" />
               <option name="questionId" value="52" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/miueon/leetcode/editor/en/PalindromeLinkedList.kt">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/miueon/leetcode/editor/en/PalindromeLinkedList.kt" />
+              <option name="questionId" value="234" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/miueon/leetcode/editor/en/PopulatingNextRightPointersInEachNode.kt">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/miueon/leetcode/editor/en/PopulatingNextRightPointersInEachNode.kt" />
+              <option name="questionId" value="116" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/miueon/leetcode/editor/en/ReverseLinkedList.kt">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/miueon/leetcode/editor/en/ReverseLinkedList.kt" />
+              <option name="questionId" value="206" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/miueon/leetcode/editor/en/ReverseLinkedListIi.kt">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/miueon/leetcode/editor/en/ReverseLinkedListIi.kt" />
+              <option name="questionId" value="92" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/miueon/leetcode/editor/en/ReverseNodesInKGroup.kt">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/miueon/leetcode/editor/en/ReverseNodesInKGroup.kt" />
+              <option name="questionId" value="25" />
             </LeetcodeEditor>
           </value>
         </entry>
