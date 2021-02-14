@@ -46,10 +46,12 @@
 // The number of nodes in the given tree is less than 4096. 
 // -1000 <= node.val <= 1000 
 // Related Topics Tree Depth-first Search Breadth-first Search 
-// 👍 2829 👎 156
+// 👍 2909 👎 157
 
   package com.miueon.leetcode.editor.en
+
 //leetcode submit region begin(Prohibit modification and deletion)
+
 /**
  * Definition for a Node.
  * class Node(var `val`: Int) {
@@ -78,11 +80,10 @@ class Solution {
         connectTwoNode(node2.left, node2.right)
         connectTwoNode(node1.right, node2.left)
     }
+
 }
 
-  //leetcode submit region end(Prohibit modification and deletion)
-  class PopulatingNextRightPointersInEachNode {
-      class Node(var left:Node?, var right:Node?, var next:Node?)
-  }
+//leetcode submit region end(Prohibit modification and deletion)
+
   
  

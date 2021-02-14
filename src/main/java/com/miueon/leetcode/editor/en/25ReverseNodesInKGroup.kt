@@ -52,7 +52,7 @@
 // 1 <= k <= sz 
 // 
 // Related Topics Linked List 
-// 👍 3010 👎 380
+// 👍 3134 👎 388
 
   package com.miueon.leetcode.editor.en
 //leetcode submit region begin(Prohibit modification and deletion)
@@ -73,7 +73,7 @@ class Solution {
             if (b == null) {
                 return head
             }
-            b = b.next
+            b = b.next // 这里的i, 对应变化的过程. 所以for结束后b为下一个group的head.
         }
         val last= reverseRange(a, b)
         head?.next = reverseKGroup(b, k)
@@ -91,6 +91,7 @@ class Solution {
         }
         return prev
     }
+
 }
 //leetcode submit region end(Prohibit modification and deletion)
 

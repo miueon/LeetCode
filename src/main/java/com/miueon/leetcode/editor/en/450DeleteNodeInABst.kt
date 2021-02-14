@@ -66,8 +66,46 @@
  */
 class Solution {
     fun deleteNode(root: TreeNode?, key: Int): TreeNode? {
-        
+        if (root == null) {
+            return null
+        }
+        val cmp = root?.`val` - key
+        var min:TreeNode? = root
+        if (cmp > 0) {
+            root?.left = deleteNode(root?.left, key)
+        } else if (cmp < 0) {
+            root?.right = deleteNode(root?.right, key)
+        } else {
+            if (root?.left == null) {
+                return root?.right
+            } else if (root?.right == null) {
+                return root?.left
+            } else {
+                min = min(root?.right)
+                min?.right = deleteMin(root?.right)
+                min?.left = root?.left
+            }
+        }
+        return min
     }
+
+    fun min(node: TreeNode?): TreeNode? {
+        var cur = node
+        while (cur?.left != null) {
+            cur = cur?.left
+        }
+        return cur
+    }
+
+    fun deleteMin(node: TreeNode?): TreeNode? {
+        if (node?.left == null) {
+            return node?.right
+        }
+        node?.left =deleteMin(node?.left)
+        return node
+    }
+
+
 }
 //leetcode submit region end(Prohibit modification and deletion)
 

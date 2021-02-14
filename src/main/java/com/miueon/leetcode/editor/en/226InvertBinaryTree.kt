@@ -1,4 +1,4 @@
-  //Invert a binary tree. 
+//Invert a binary tree.
 //
 // Example: 
 //
@@ -26,10 +26,11 @@
 // Google: 90% of our engineers use the software you wrote (Homebrew), but you c
 //an’t invert a binary tree on a whiteboard so f*** off. 
 // Related Topics Tree 
-// 👍 4323 👎 71
+// 👍 4507 👎 69
+package com.miueon.leetcode.editor.en
 
-  package com.miueon.leetcode.editor.en
-//leetcode submit region begin(Prohibit modification and deletion)
+import java.util.*
+
 /**
  * Example:
  * var ti = TreeNode(5)
@@ -40,10 +41,26 @@
  *     var right: TreeNode? = null
  * }
  */
-class Solution {
-    fun invertTree(root: TreeNode?): TreeNode? {
-        
+
+//leetcode submit region begin(Prohibit modification and deletion)
+internal class Solution {
+    fun invertTree(root: TreeNode): TreeNode {
+        val tmp = root.left
+        root.left = root.right
+
     }
+//    fun invertTree(root: TreeNode?): TreeNode? {
+//        if (root == null) {
+//            return root
+//        }
+//        invertTree(root.left)
+//        val tmp = root.left
+//        root.left = root.right
+//        root.right = tmp
+//        invertTree(root.left)
+//        return root
+//    }
+
 }
 //leetcode submit region end(Prohibit modification and deletion)
 

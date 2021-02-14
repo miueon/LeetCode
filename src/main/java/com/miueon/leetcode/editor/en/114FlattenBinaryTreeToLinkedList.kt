@@ -26,7 +26,7 @@
 //          6
 // 
 // Related Topics Tree Depth-first Search 
-// 👍 3581 👎 377
+// 👍 3709 👎 387
 
   package com.miueon.leetcode.editor.en
 //leetcode submit region begin(Prohibit modification and deletion)
@@ -47,17 +47,11 @@ class Solution {
         }
         flatten(root.left)
         flatten(root.right)
-
-        var left = root.left
-        var right = root.right
-        root.left = null
-        root.right = left
-
-        var ptr = root
-        while (ptr?.right != null) {
-            ptr = ptr.right
+        var a = root.left
+        while (a.right != null) {
+            a = a.right
         }
-        ptr?.right = right
+
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
