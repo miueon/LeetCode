@@ -65,18 +65,18 @@ class Solution {
         return mid.get(k-1).`val`
     }
 
-    fun traverse(root: TreeNode?): TreeNode? {
+    fun traverse(root: TreeNode?): Unit {
         if (root == null) {
-            return null
+            return
         }
-
-        traverse(root.left)
-        mid.add(root)
-        if (mid.size == k) {
-            return null
+        if (k != 0) {
+            traverse(root.left)
+            mid.add(root)
+            this.k -= 1
+            traverse(root.right)
+            return
         }
-        traverse(root.right)
-        return root
+        return
     }
 
 }

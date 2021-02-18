@@ -66,13 +66,13 @@ class Solution {
         val left = traverse(root.left)
         val right = traverse(root.right)
 
-        val res = "$left,$right,${root.`val`}"
-        val count = structure.getOrDefault(res, 0)
+        val shape = "$left,$right,${root.`val`}"
+        val count = structure.getOrDefault(shape, 0)
         if (count == 1) {
             result.add(root)
         }
-        structure[res] = count + 1
-        return res
+        structure[shape] = count +1
+        return shape
     }
 
 }

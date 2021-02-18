@@ -35,6 +35,30 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/miueon/leetcode/editor/en/130SurroundedRegions.kt">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/miueon/leetcode/editor/en/130SurroundedRegions.kt" />
+              <option name="questionId" value="130" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/miueon/leetcode/editor/en/146LruCache.kt">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/miueon/leetcode/editor/en/146LruCache.kt" />
+              <option name="questionId" value="146" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/miueon/leetcode/editor/en/222CountCompleteTreeNodes.kt">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/miueon/leetcode/editor/en/222CountCompleteTreeNodes.kt" />
+              <option name="questionId" value="222" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/com/miueon/leetcode/editor/en/226InvertBinaryTree.kt">
           <value>
             <LeetcodeEditor>
@@ -144,6 +168,14 @@
             <LeetcodeEditor>
               <option name="path" value="$PROJECT_DIR$/src/main/java/com/miueon/leetcode/editor/en/98ValidateBinarySearchTree.kt" />
               <option name="questionId" value="98" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/miueon/leetcode/editor/en/990SatisfiabilityOfEqualityEquations.kt">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/miueon/leetcode/editor/en/990SatisfiabilityOfEqualityEquations.kt" />
+              <option name="questionId" value="1032" />
             </LeetcodeEditor>
           </value>
         </entry>
