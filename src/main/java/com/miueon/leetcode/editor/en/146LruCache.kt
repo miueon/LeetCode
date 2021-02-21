@@ -52,18 +52,136 @@
 // 👍 7803 👎 320
 
   package com.miueon.leetcode.editor.en
-//leetcode submit region begin(Prohibit modification and deletion)
-class LRUCache(capacity: Int) {
 
-    fun get(key: Int): Int {
-        
-    }
+  //leetcode submit region begin(Prohibit modification and deletion)
+  class LRUCache(capacity: Int) {
+      //    val cache:LinkedHashMap<Int, Int> = LinkedHashMap()
+//    val cap = capacity
+//    fun get(key: Int): Int {
+//        if (!cache.containsKey(key)) {
+//            return -1
+//        }
+//        makeRecently(key)
+//        return cache[key]!!
+//    }
+//
+//    fun put(key: Int, value: Int) {
+//        if (cache.containsKey(key)) {
+//            cache[key] = value
+//            makeRecently(key)
+//            return
+//        }
+//
+//        if (cache.size >= this.cap) {
+//            // the head of list is the least used key
+//            val oldestKey = cache.keys.iterator().next()
+//            cache.remove(oldestKey)
+//        }
+//
+//        cache[key] = value
+//    }
+//
+//    private fun makeRecently(key: Int): Unit {
+//        val v = cache[key]
+//        cache.remove(key)
+//        cache[key] = v!!
+//    }
+      private val map: HashMap<Int, Node> = HashMap()
+      private val cache = DoubleList()
+      private val cap: Int = capacity
 
-    fun put(key: Int, value: Int) {
-        
-    }
+      fun get(key: Int): Int {
+          if (!map.containsKey(key)) {
+              return -1
+          }
+          makeRecently(key)
+          return map[key]!!.v
+      }
 
-}
+      fun put(k: Int, v: Int) {
+          if (map.containsKey(k)) {
+              deleteKey(k)
+              addRecently(k, v)
+              return
+          }
+
+          if (cap == cache.size()) {
+              removeLeastRecently()
+          }
+
+          addRecently(k, v)
+      }
+
+      private fun makeRecently(key: Int) {
+          val x = map[key]
+          cache.remove(x!!)
+          cache.addLast(x)
+      }
+
+      private fun addRecently(key: Int, v: Int) {
+          val x = Node(key, v)
+          cache.addLast(x)
+          map[key] = x
+      }
+
+      private fun deleteKey(key: Int) {
+          val x = map[key]
+          cache.remove(x!!)
+          map.remove(key)
+      }
+
+      private fun removeLeastRecently() {
+          val deleteNode = cache.removeFirst()
+          val deletedKey = deleteNode!!.key
+          map.remove(deletedKey)
+      }
+
+      internal class Node(val key: Int, val v: Int
+      ) {
+          var next: Node? = null
+          var prev: Node? = null
+      }
+
+      internal class DoubleList {
+          private val head: Node = Node(0, 0)
+          private val tail: Node = Node(0, 0)
+          private var size: Int
+
+          init {
+              head.next = tail
+              tail.prev = head
+              size = 0
+          }
+
+          fun addLast(x: Node) {
+              x.prev = tail.prev
+              x.next = tail
+              tail.prev!!.next = x
+              tail.prev = x
+              size++
+          }
+
+          fun remove(x: Node) {
+              x.prev!!.next = x.next
+              x.next!!.prev = x.prev
+              size--
+          }
+
+          fun removeFirst(): Node? {
+              if (head.next == tail) {
+                  return null
+              }
+              val first = head.next
+              remove(first!!)
+              return first
+          }
+
+          fun size(): Int {
+              return size
+          }
+      }
+
+  }
 
 /**
  * Your LRUCache object will be instantiated and called as such:

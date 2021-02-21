@@ -99,6 +99,14 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/miueon/leetcode/editor/en/295FindMedianFromDataStream.kt">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/miueon/leetcode/editor/en/295FindMedianFromDataStream.kt" />
+              <option name="questionId" value="295" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/com/miueon/leetcode/editor/en/297SerializeAndDeserializeBinaryTree.kt">
           <value>
             <LeetcodeEditor>
@@ -115,11 +123,35 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/miueon/leetcode/editor/en/355DesignTwitter.kt">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/miueon/leetcode/editor/en/355DesignTwitter.kt" />
+              <option name="questionId" value="355" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/com/miueon/leetcode/editor/en/450DeleteNodeInABst.kt">
           <value>
             <LeetcodeEditor>
               <option name="path" value="$PROJECT_DIR$/src/main/java/com/miueon/leetcode/editor/en/450DeleteNodeInABst.kt" />
               <option name="questionId" value="450" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/miueon/leetcode/editor/en/460LfuCache.kt">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/miueon/leetcode/editor/en/460LfuCache.kt" />
+              <option name="questionId" value="460" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/miueon/leetcode/editor/en/496NextGreaterElementI.kt">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/miueon/leetcode/editor/en/496NextGreaterElementI.kt" />
+              <option name="questionId" value="496" />
             </LeetcodeEditor>
           </value>
         </entry>
