@@ -48,10 +48,35 @@
 // 👍 2230 👎 2710
 
   package com.miueon.leetcode.editor.en
-//leetcode submit region begin(Prohibit modification and deletion)
+
+  import java.util.*
+  import kotlin.collections.ArrayList
+  import kotlin.collections.HashMap
+
+  //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     fun nextGreaterElement(nums1: IntArray, nums2: IntArray): IntArray {
-        
+        val valueToIndex = HashMap<Int, Int>()
+        nums2.forEachIndexed { index, i ->
+            valueToIndex[i] = index
+        }
+        val res:MutableList<Int> = ArrayList(Collections.nCopies(nums2.size, 0))
+        val s:Stack<Int> = Stack()
+        for (i in nums2.size-1 downTo 0) {
+            while (s.isNotEmpty() && s.peek() <= nums2[i]) {
+                s.pop()
+            }
+
+            res[i] = when (s.empty()) {
+                true -> -1
+                false -> s.peek()
+            }
+
+            s.push(nums2[i])
+        }
+        val res2:MutableList<Int> = ArrayList(Collections.nCopies(nums1.size, 0))
+        nums1.forEachIndexed { index, i -> res2[index] = res[valueToIndex[i]!!] }
+        return res2.toIntArray()
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
