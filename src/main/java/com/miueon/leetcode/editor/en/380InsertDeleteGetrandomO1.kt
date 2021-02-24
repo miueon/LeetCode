@@ -53,25 +53,44 @@
 // 👍 3314 👎 199
 
   package com.miueon.leetcode.editor.en
-//leetcode submit region begin(Prohibit modification and deletion)
-class RandomizedSet() {
 
+  import kotlin.random.Random
+
+  //leetcode submit region begin(Prohibit modification and deletion)
+class RandomizedSet() {
     /** Initialize your data structure here. */
-    
+    val nums = ArrayList<Int>()
+    val valToIndex = HashMap<Int, Int>()
 
     /** Inserts a value to the set. Returns true if the set did not already contain the specified element. */
     fun insert(`val`: Int): Boolean {
-        
+        if (valToIndex.containsKey(`val`)) {
+            return false
+        }
+
+        valToIndex[`val`] = nums.size
+        nums.add(`val`)
+        return true
     }
 
     /** Removes a value from the set. Returns true if the set contained the specified element. */
+    @ExperimentalStdlibApi
     fun remove(`val`: Int): Boolean {
-        
+        if (!valToIndex.containsKey(`val`)) {
+            return false
+        }
+        val index = valToIndex[`val`]
+        val temp = nums[index!!]
+        nums[index] = nums.last()
+        nums[nums.lastIndex] = temp
+        nums.removeLast()
+        valToIndex.remove(`val`)
+        return true
     }
 
     /** Get a random element from the set. */
     fun getRandom(): Int {
-        
+        return nums[Random(System.nanoTime()).nextInt() % nums.size]
     }
 
 }
