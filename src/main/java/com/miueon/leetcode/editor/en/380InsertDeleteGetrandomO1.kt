@@ -74,7 +74,6 @@ class RandomizedSet() {
     }
 
     /** Removes a value from the set. Returns true if the set contained the specified element. */
-    @ExperimentalStdlibApi
     fun remove(`val`: Int): Boolean {
         if (!valToIndex.containsKey(`val`)) {
             return false
@@ -83,7 +82,7 @@ class RandomizedSet() {
         val temp = nums[index!!]
         nums[index] = nums.last()
         nums[nums.lastIndex] = temp
-        nums.removeLast()
+        nums.removeAt(nums.lastIndex)
         valToIndex.remove(`val`)
         return true
     }

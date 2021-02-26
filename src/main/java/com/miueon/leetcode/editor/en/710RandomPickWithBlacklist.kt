@@ -56,13 +56,39 @@
 // 👍 402 👎 73
 
   package com.miueon.leetcode.editor.en
-//leetcode submit region begin(Prohibit modification and deletion)
+
+  import kotlin.random.Random
+
+  //leetcode submit region begin(Prohibit modification and deletion)
 class Solution(N: Int, blacklist: IntArray) {
-
+    val sz:Int
+    val mapping = HashMap<Int, Int>()
     fun pick(): Int {
-        
+        val index =(Math.random() * sz).toInt() % sz
+        if (mapping.containsKey(index)) {
+            return mapping[index]!!
+        }
+        return index
     }
+    init {
+        sz = N - blacklist.size
+        for (b in blacklist) {
+            mapping[b] = 123
+        }
 
+        var last = N -1
+        for (b in blacklist) {
+            if (b >= sz) {
+                continue
+            }
+            while (mapping.containsKey(last)) {
+                last--
+            }
+
+            mapping[b] = last
+            last--
+        }
+    }
 }
 
 /**
