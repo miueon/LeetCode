@@ -70,8 +70,25 @@
  * }
  */
 class Solution {
+    var count:Int = 0
     fun bstToGst(root: TreeNode?): TreeNode? {
-        
+        constructList(root)
+
+        return root
+    }
+
+    fun constructList(root: TreeNode?) {
+        if (root == null) {
+            return
+        }
+
+//        constructList(root.left)
+        constructList(root.right)
+        var result: Int = root.`val` + count
+        count  = result
+        root.`val` = result
+        constructList(root.left)
+//        constructList(root.right)
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
